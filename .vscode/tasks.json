@@ -15,6 +15,7 @@
                 "-Wconversion",
                 "-Wsign-conversion",
                 "-Werror", // Treat warnings as errors
+                "-std=c++23", // 编译器使用 C++23 标准
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
@@ -46,6 +47,7 @@
                 "-Wconversion",
                 "-Wsign-conversion",
                 "-Werror", // Treat warnings as errors
+                "-std=c++23",
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}-release"
