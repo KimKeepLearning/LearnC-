@@ -9,6 +9,12 @@
                 "-fdiagnostics-color=always",
                 "-ggdb",
                 "-pedantic-errors", // 如果你的代码中使用了任何非标准的 C++ 语法，编译器会直接报错并停止编译，而不是仅仅给出一个警告
+                "-Wall", // 以下五项启用大部分常见的警告信息
+                "-Weffc++",
+                "-Wextra",
+                "-Wconversion",
+                "-Wsign-conversion",
+                "-Werror", // Treat warnings as errors
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
@@ -34,6 +40,12 @@
                 "-O2",
                 "-DNDEBUG",
                 "-pedantic-errors",
+                "-Wall",
+                "-Weffc++",
+                "-Wextra",
+                "-Wconversion",
+                "-Wsign-conversion",
+                "-Werror", // Treat warnings as errors
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}-release"
