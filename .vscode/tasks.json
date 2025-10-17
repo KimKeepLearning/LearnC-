@@ -18,6 +18,7 @@
                 "-std=c++23", // 编译器使用 C++23 标准
                 "${file}",
                 "-o",
+                "-I./source/includes",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
@@ -50,6 +51,7 @@
                 "-std=c++23",
                 "${file}",
                 "-o",
+                "-I./source/includes",
                 "${fileDirname}/${fileBasenameNoExtension}-release"
             ],
             "options": {
