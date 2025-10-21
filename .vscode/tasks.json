@@ -16,9 +16,9 @@
                 "-Wsign-conversion",
                 "-Werror", // Treat warnings as errors
                 "-std=c++23", // 编译器使用 C++23 标准
+                // "-I./source/includes",
                 "${file}",
                 "-o",
-                "-I./source/includes",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
@@ -49,9 +49,9 @@
                 "-Wsign-conversion",
                 "-Werror", // Treat warnings as errors
                 "-std=c++23",
+                // "-I./source/includes",
                 "${file}",
                 "-o",
-                "-I./source/includes",
                 "${fileDirname}/${fileBasenameNoExtension}-release"
             ],
             "options": {
